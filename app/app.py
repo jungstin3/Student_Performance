@@ -1,13 +1,19 @@
 import pickle
 import json
+import os
 import pandas as pd
 import streamlit as st
 from datetime import datetime
 
-with open('xgb_model.pkl', 'rb') as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, '..', 'src', 'xgb_model.pkl')
+FEATURE_PATH = os.path.join(BASE_DIR, '..', 'src', 'features.json')
+
+with open(MODEL_PATH, 'rb') as f:
     best_xgb_model = pickle.load(f)
- 
-with open('features.json', 'r') as f:
+
+with open(FEATURE_PATH, 'r') as f:
     features = json.load(f)
     
 st.title("Student's Exam Score Prediction 💯")
