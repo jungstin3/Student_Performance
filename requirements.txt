@@ -4,5 +4,5 @@ matplotlib
 seaborn
 scikit-learn==1.6.1
 streamlit
-xgboost==1.7.6
+xgboost==1.6.2
 
