@@ -1,17 +1,8 @@
-# pandas
-# numpy
-# matplotlib
-# seaborn
-# scikit-learn==1.6.1
-# streamlit
-# xgboost==1.6.2
-# setuptools
-
-numpy<2.0
 pandas
-scikit-learn==1.2.2
-xgboost==1.6.2
-setuptools
-streamlit
+numpy
 matplotlib
 seaborn
+scikit-learn==1.6.1
+streamlit
+xgboost
+setuptools
